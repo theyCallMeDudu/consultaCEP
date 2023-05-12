@@ -1,0 +1,70 @@
+body {
+    background-color: #0c2b58;
+    display: flex;
+    flex-direction: column;
+    font-family: monospace;
+}
+
+h4 {
+    text-align: center;
+    display: block;
+    color: #FFF;
+}
+
+.info {
+    width: 30%;
+    margin: auto;
+    text-align: justify;
+    color: #FFF;
+}
+
+.info a {
+    color: #FF8C75;
+}
+
+.corpo {
+    background-color: #FF8C75;
+    display: flex;
+    flex-direction: column;
+    width: 26%;
+    padding: 2%;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.consulta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cep {
+    display: block;
+    width: 50%;
+    border-radius: 5px;
+}
+
+.endereco {
+    width: 50%;
+    display: inline-block;
+}
+
+.cidade {
+    width: 50%;
+    display: inline;
+}
+
+.bairro {
+    width: 50%;
+    display: inline-block;
+}
+
+.estado {
+    width: 50%;
+    display: inline;
+}
+
+.uf {
+    width: 25%;
+    display: block;
+}

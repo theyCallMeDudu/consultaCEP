@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Consulta CEP</title>
+    <h4 class="titulo">Consulta CEP</h4>
+</head>
+<body>
+    <div class="info">
+        <p>
+            Este é um projeto didático desenvolvido para aplicar conceitos aprendidos no curso 
+            "JavaScript: consumindo e tratando dados de uma API" ministrado por Monica Hillman.
+            Este projeto se utilizou da API <span style="font-style: italic;"><a href="https://viacep.com.br/" alt="Link API Via CEP">Via CEP</a></span>, disponibilizada gratuitamente na Web.
+        </p>
+    </div>
+    <div class="corpo">
+        <div class="consulta">
+            <label for="cep">Informe o CEP que deseja consultar</label>
+            <input type="text" id="cep" placeholder="Ex.: 01001000">
+            <div id="erro"></div>
+        </div>
+
+        <div class="resultado">
+            <div class="endereco">
+                <label for="endereco">Endereço</label>
+                <div id="endereco"></div>
+            </div>
+            <hr>
+            <div class="bairro">
+                <label for="">Bairro</label>
+                <div id="bairro"></div>
+            </div>
+            <hr>
+            <div class="cidade">
+                <label for="cidade">Cidade</label>
+                <div id="cidade"></div>
+            </div>
+            <hr>
+            <div class="estado">
+                <label for="estado">Estado</label>
+                <div id="estado"></div>
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
