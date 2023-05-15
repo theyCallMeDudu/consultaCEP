@@ -1,2 +1,2 @@
 ## consultaCEP
-This is a didactic project made to exercise concepts learned in the course "JavaScript: consumindo e tratando dados de uma API" taught by Monica Hillman.
+This is a didactic project designed to exercise API consumption concepts via JavaScript learned in the course "JavaScript: consuming and processing data from an API" taught by Monica Hillman.
