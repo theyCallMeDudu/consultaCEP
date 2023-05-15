@@ -3,9 +3,10 @@ body {
     display: flex;
     flex-direction: column;
     font-family: monospace;
+    font-size: 13pt;
 }
 
-h4 {
+h1 {
     text-align: center;
     display: block;
     color: #FFF;
@@ -16,6 +17,9 @@ h4 {
     margin: auto;
     text-align: justify;
     color: #FFF;
+    font-size: 13pt;
+    border-top: 5px solid #FF8C75;
+    border-top-style: dashed;
 }
 
 .info a {
@@ -30,41 +34,134 @@ h4 {
     padding: 2%;
     margin: auto;
     border-radius: 5px;
+    margin-bottom: 20px;
 }
 
 .consulta {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 30px;
 }
 
 #cep {
     display: block;
-    width: 50%;
+    width: 60%;
     border-radius: 5px;
+    padding: 5px;
+    height: 25px;
 }
 
 .endereco {
-    width: 50%;
+    width: 100%;
     display: inline-block;
 }
 
 .cidade {
-    width: 50%;
+    width: 100%;
     display: inline;
 }
 
 .bairro {
-    width: 50%;
+    width: 100%;
     display: inline-block;
 }
 
 .estado {
-    width: 50%;
+    width: 100%;
     display: inline;
 }
 
 .uf {
-    width: 25%;
+    width: 100%;
     display: block;
+}
+
+.complemento {
+    width: 100%;
+    display: block;
+}
+
+.rodape {
+    border-top: 5px solid #FF8C75;
+    border-top-style: dashed;
+    width: 30%;
+    margin: auto;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 15px;
+}
+
+.social a {
+    color: #FF8C75;
+}
+
+.social a:hover {
+    transition: 0.5s;
+    color: #FFF;
+    text-decoration: none;
+}
+
+.social i {
+    font-size: 14pt;
+}
+
+@media screen and (max-width: 700px) {
+    .info {
+        width: 100%;
+        margin: auto;
+        text-align: justify;
+        color: #FFF;
+        font-size: 13pt
+    }
+
+    .corpo {
+        background-color: #FF8C75;
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        padding: 2%;
+        margin: auto;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+
+    #cep {
+        display: block;
+        width: 80%;
+        border-radius: 5px;
+        padding: 5px;
+        height: 25px;
+    }
+
+    .rodape {
+        border-top: 5px solid #FF8C75;
+        border-top-style: dashed;
+        width: 100%;
+    }
+    
+    .social {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-top: 15px;
+    }
+
+    .social i {
+        font-size: 26pt;
+    }
+    
+    .social a {
+        color: #FF8C75;
+    }
+    
+    .social a:hover {
+        transition: 0.5s;
+        color: #FFF;
+        text-decoration: none;
+    }
 }

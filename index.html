@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c0209b2941.js" crossorigin="anonymous"></script>
     <title>Consulta CEP</title>
-    <h4 class="titulo">Consulta CEP</h4>
+    <h1 class="titulo">Consulta CEP</h1>
 </head>
 <body>
     <div class="info">
@@ -18,33 +19,53 @@
     </div>
     <div class="corpo">
         <div class="consulta">
-            <label for="cep">Informe o CEP que deseja consultar</label>
-            <input type="text" id="cep" placeholder="Ex.: 01001000">
+            <label for="cep" style="margin-bottom: 10px;">
+                <b>Informe o CEP que deseja consultar</b>
+            </label>
+            <input type="text" id="cep" placeholder="Ex.: 01001000" autocomplete="off">
             <div id="erro"></div>
         </div>
 
         <div class="resultado">
             <div class="endereco">
-                <label for="endereco">Endereço</label>
+                <label for="endereco"><b>Endereço</b></label>
                 <div id="endereco"></div>
             </div>
             <hr>
             <div class="bairro">
-                <label for="">Bairro</label>
+                <label for="bairro"><b>Bairro</b></label>
                 <div id="bairro"></div>
             </div>
             <hr>
             <div class="cidade">
-                <label for="cidade">Cidade</label>
+                <label for="cidade"><b>Cidade</b></label>
                 <div id="cidade"></div>
             </div>
             <hr>
             <div class="estado">
-                <label for="estado">Estado</label>
+                <label for="estado"><b>Estado</b></label>
                 <div id="estado"></div>
+            </div>
+            <hr>
+            <div class="complemento">
+                <label for="complemento"><b>Complemento</b></label>
+                <div id="complemento"></div>
             </div>
         </div>
 
+    </div>
+    <div class="rodape">
+        <div class="social">
+            <a href="https://github.com/theyCallMeDudu" target="blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/eduardo-coelho-/" target="blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="mailto:eduardo.coelho@edu.unirio.br" target="blank">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
