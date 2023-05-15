@@ -1,3 +1,8 @@
+var estado = document.getElementById('estado');
+var cidade = document.getElementById('cidade');
+var bairro = document.getElementById('bairro');
+var logradouro = document.getElementById('endereco');
+var complemento = document.getElementById('complemento');
 var mensagemErro = document.getElementById('erro');
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -12,10 +17,20 @@ document.addEventListener('DOMContentLoaded', function() {
             mensagemErro.innerHTML = "";
             buscaEndereco(valorNumerico);
         } else {
+            estado.innerHTML = "";
+            cidade.innerHTML = "";
+            bairro.innerHTML = "";
+            logradouro.innerHTML = "";
+            complemento.innerHTML = "";
             mensagemErro.innerHTML = `<p>CEP inválido. Tente novamente!</p>`;
         }
         
         if (valorDigitado.length === 0) {
+            estado.innerHTML = "";
+            cidade.innerHTML = "";
+            bairro.innerHTML = "";
+            logradouro.innerHTML = "";
+            complemento.innerHTML = "";
             mensagemErro.innerHTML = "";
         }
     });
@@ -23,12 +38,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 async function buscaEndereco(cep) {    
     mensagemErro.innerHTML = "";
-
-    var estado = document.getElementById('estado');
-    var cidade = document.getElementById('cidade');
-    var bairro = document.getElementById('bairro');
-    var logradouro = document.getElementById('endereco');
-    var complemento = document.getElementById('complemento');
 
     try {
         var consultaCEP = await fetch(`https://viacep.com.br/ws/${cep}/json/`);
