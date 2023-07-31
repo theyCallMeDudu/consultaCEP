@@ -44,6 +44,12 @@ h1 {
     margin-bottom: 30px;
 }
 
+#carregando {
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
 #cep {
     display: block;
     width: 60%;

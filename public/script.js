@@ -37,11 +37,18 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 async function buscaEndereco(cep) {    
+    const carregando = document.getElementById('carregando');
+    carregando.style.display = 'flex';
+
     mensagemErro.innerHTML = "";
 
     try {
         var consultaCEP = await fetch(`https://viacep.com.br/ws/${cep}/json/`);
         var consultaCEPConvertida = await consultaCEP.json();
+
+        // Aguarda 3 segundos antes de continuar
+        await new Promise(resolve => setTimeout(resolve, 2000));
+        carregando.style.display = 'none';
 
         if (consultaCEPConvertida.erro) {
             throw Error('O CEP informado não existe!');
