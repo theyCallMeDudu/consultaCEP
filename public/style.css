@@ -12,6 +12,14 @@ h1 {
     color: #FFF;
 }
 
+.logotipo {
+    width: 30%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 20px 0;
+}
+
 .info {
     width: 30%;
     margin: auto;
